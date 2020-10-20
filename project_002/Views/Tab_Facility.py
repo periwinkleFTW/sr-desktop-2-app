@@ -1,7 +1,7 @@
 try:
     from PySide2.QtWidgets import QWidget
 except:
-    from PyQt.QtWidgets import QWidget
+    from PyQt5.QtWidgets import QWidget
 
 class FacilityTab(QWidget):
     def __init__(self, parent):
