@@ -30,10 +30,10 @@ class Main(QMainWindow):
 
         self.setStyleSheet('QMainWindow{background-color: #F4F7F9;}')
 
-        self.SmpRptDbase = Database("sr-data.db")
-
-        self.CenterPane = CenterPanel(self)
-        self.setCentralWidget(self.CenterPane)
+        # self.SmpRptDbase = Database("sr-data.db")
+        #
+        # self.CenterPane = CenterPanel(self)
+        # self.setCentralWidget(self.CenterPane)
 
         # self.MenuBar = MenuToolBar(self)
 
