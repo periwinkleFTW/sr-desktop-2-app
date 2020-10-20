@@ -24,12 +24,18 @@ from sys import exit as sysExit
 class Main(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
-        self.setWindowTitle("SR 2")
+        self.setWindowTitle("SR test")
         self.setWindowIcon(QIcon("assets/icons/logo-dark.png"))
         self.setGeometry(150, 150, 1470, 750)
 
         self.setStyleSheet('QMainWindow{background-color: #F4F7F9;}')
 
+        self.SmpRptDbase = Database("sr-data.db")
+
+        self.CenterPane = CenterPanel(self)
+        self.setCentralWidget(self.CenterPane)
+
+        # self.MenuBar = MenuToolBar(self)
 
         self.StatBar = self.statusBar()
         self.SetStatusBar()
