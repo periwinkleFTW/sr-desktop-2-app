@@ -1,16 +1,9 @@
-# python srMain.py
-######################################################
-# srMain.py
-# This is a main script for the application
-######################################################
-
 try:
    # from PySide2.QtCore    import
     from PySide2.QtWidgets import QApplication, QMainWindow
 except:
    # from PyQt5.QtCore    import
     from PyQt5.QtWidgets import QApplication, QMainWindow
-
 
 from sys import exit as sysExit
 
