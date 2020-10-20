@@ -1,5 +1,5 @@
 ######################################################
-# center_pane.py
+# srCentralPanel.py
 # This script contains GUI elements of the app
 ######################################################
 

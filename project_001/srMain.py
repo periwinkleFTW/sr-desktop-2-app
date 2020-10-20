@@ -1,6 +1,6 @@
-# python main.py
+# python srMain.py
 ######################################################
-# main.py
+# srMain.py
 # This is a main script for the application
 ######################################################
 
