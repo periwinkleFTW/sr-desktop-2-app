@@ -8,7 +8,7 @@ class PeopleTab(QWidget):
         QWidget.__init__(self)
         self.Parent = parent
 
-        self.tbPeople = 'PEOPLE'
+        self.tbPeople = 'People'
 
         @property
         def Title(self):

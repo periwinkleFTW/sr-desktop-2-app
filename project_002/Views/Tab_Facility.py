@@ -8,7 +8,7 @@ class FacilityTab(QWidget):
         QWidget.__init__(self)
         self.Parent = parent
 
-        self.tbFclty = 'FACILITIES'
+        self.tbFclty = 'Facilities'
 
         @property
         def Title(self):
