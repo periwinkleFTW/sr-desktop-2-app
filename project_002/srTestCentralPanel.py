@@ -17,7 +17,7 @@ class Main(QMainWindow):
 
         self.setGeometry(150, 150, 1470, 750)
 
-        self.CenterPane = CntrPnl.CentralPanel(self)
+        self.CenterPane = CntrPnl.CenterPanel(self)
         self.setCentralWidget(self.CenterPane)
 
 
