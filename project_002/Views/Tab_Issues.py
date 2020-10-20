@@ -10,6 +10,6 @@ class IssuesTab(QWidget):
 
         self.tbIssue = 'Issues'
 
-        @property
-        def Title(self):
-            return self.tbIssue
+    @property
+    def Title(self):
+        return self.tbIssue

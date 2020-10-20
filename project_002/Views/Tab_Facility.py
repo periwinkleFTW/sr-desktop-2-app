@@ -10,6 +10,6 @@ class FacilityTab(QWidget):
 
         self.tbFclty = 'Facilities'
 
-        @property
-        def Title(self):
-            return self.tbFclty
+    @property
+    def Title(self):
+        return self.tbFclty

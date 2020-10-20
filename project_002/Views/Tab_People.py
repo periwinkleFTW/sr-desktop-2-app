@@ -10,6 +10,6 @@ class PeopleTab(QWidget):
 
         self.tbPeople = 'People'
 
-        @property
-        def Title(self):
-            return self.tbPeople
+    @property
+    def Title(self):
+        return self.tbPeople
