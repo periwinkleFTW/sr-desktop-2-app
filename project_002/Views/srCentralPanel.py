@@ -7,14 +7,9 @@
 from PySide2.QtWidgets import QWidget, QTabWidget, QVBoxLayout, QLabel
 from PySide2.QtGui import QPixmap
 
-from Views.tabDummy1 import TabDummy1
-from Views.tabDummy2 import TabDummy2
-from Views.tabDummy3 import TabDummy3
-
-
-# from Tab_Issues import IssuesTab
-# from Tab_People import PeopleTab
-# from Tab_Facility import FacilityTab
+from Views.Tab_Issues import IssuesTab
+from Views.Tab_People import PeopleTab
+from Views.Tab_Facility import FacilityTab
 #
 # import styles
 
@@ -30,9 +25,9 @@ class CenterPanel(QWidget):
 
         # self.setStyleSheet(styles.mainStyle())
 
-        self.tbIssue = TabDummy1(self)
-        self.tbPeople = TabDummy2(self)
-        self.tbFclty = TabDummy3(self)
+        self.tbIssue = IssuesTab(self)
+        self.tbPeople = PeopleTab(self)
+        self.tbFclty = FacilityTab(self)
 
         self.TabHldr = QTabWidget()
         self.TabHldr.addTab(self.tbIssue, self.tbIssue.Title)

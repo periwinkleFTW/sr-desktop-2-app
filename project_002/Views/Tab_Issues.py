@@ -3,13 +3,13 @@ try:
 except:
     from PyQt.QtWidgets import QWidget
 
-class TabDummy2(QWidget):
+class IssuesTab(QWidget):
     def __init__(self, parent):
         QWidget.__init__(self)
         self.Parent = parent
 
-        self.tabTitle = 'Tab2'
+        self.tbIssue = 'ISSUES'
 
         @property
         def Title(self):
-            return self.tabTitle
+            return self.tbIssue
