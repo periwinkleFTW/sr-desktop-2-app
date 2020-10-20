@@ -19,7 +19,7 @@ class CenterPanel(QWidget):
         QWidget.__init__(self)
         self.Parent = parent
 
-        self.img = QPixmap('assets/logo/logo-full-main.png')
+        self.img = QPixmap('assets/logo/logo-dark.png')
         self.logoImg = QLabel()
         self.logoImg.setPixmap(self.img)
         self.logoImg.setStyleSheet('QLabel{margin-left: 25px; margin-bottom: 25px; margin-top: 20px;}')
