@@ -3,9 +3,12 @@
 # This script contains GUI elements of the app
 ######################################################
 
-
-from PySide2.QtWidgets import QWidget, QTabWidget, QVBoxLayout, QLabel
-from PySide2.QtGui import QPixmap
+try:
+    from PySide2.QtWidgets import QWidget, QTabWidget, QVBoxLayout, QLabel
+    from PySide2.QtGui import QPixmap
+except:
+    from PyQt.QtWidgets import QWidget, QTabWidget, QVBoxLayout, QLabel
+    from PyQt.QtGui import QPixmap
 
 from Views.Tab_Issues import IssuesTab
 from Views.Tab_People import PeopleTab
