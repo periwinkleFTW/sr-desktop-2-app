@@ -1,13 +1,13 @@
 try:
-   # from PySide2.QtCore    import
+    # from PySide2.QtCore    import
     from PySide2.QtWidgets import QApplication, QMainWindow
 except:
-   # from PyQt5.QtCore    import
+    # from PyQt5.QtCore    import
     from PyQt5.QtWidgets import QApplication, QMainWindow
 
 from sys import exit as sysExit
 
-from Views.srCentralPanel import CenterPanel as CntrPnl
+import Views.srCentralPanel as CntrPnl
 
 
 class Main(QMainWindow):
@@ -19,6 +19,7 @@ class Main(QMainWindow):
 
         self.CenterPane = CntrPnl.CentralPanel(self)
         self.setCentralWidget(self.CenterPane)
+
 
 if __name__ == "__main__":
     MainEventThread = QApplication([])
