@@ -7,6 +7,8 @@ except:
 
 from sys import exit as sysExit
 
+from Views.srCentralPanel import CenterPanel as CntrPnl
+
 
 class Main(QMainWindow):
     def __init__(self):
@@ -15,8 +17,8 @@ class Main(QMainWindow):
 
         self.setGeometry(150, 150, 1470, 750)
 
-        # self.CenterPane = CenterPanel(self)
-        # self.setCentralWidget(self.CenterPane)
+        self.CenterPane = CntrPnl.CentralPanel(self)
+        self.setCentralWidget(self.CenterPane)
 
 if __name__ == "__main__":
     MainEventThread = QApplication([])
